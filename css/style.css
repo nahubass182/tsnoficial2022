@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../imagenes/fondopaginaweb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-image: linear-gradient(to right, yellow, yellowgreen);
+    align-items: center;
+}
+
+.logomenu{
+    height: 100px;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.barramenu{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+}
+
+.barramenu li{
+    margin: 80px;
+    padding: 15px;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.barramenu li a{
+    color: black;
+}
+
+.barramenu li a:hover{
+    color: white;
+}
+
+.menu-icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.menu-icon, #check{
+    display: none;
+}
+
+@media (max-width: 700px){
+    /* menu media */
+    .checkbtn{
+        display: block;
+    }
+
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top: 100px;
+        left: -110%;
+        background-image: linear-gradient(to right, yellow, yellowgreen);
+        width: 100%;
+        height: 50%;
+        right: 0;
+    }
+
+    .nav-menu ul li{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav-menu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.titulo-disco{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    color: black;
+    animation: neon 5s infinite;
+}
+@keyframes neon{
+    0%, 39%, 41%, 59%, 61%, 100% {
+        text-shadow:
+        black 0 0 12px,
+        white 0 0 24px,
+        white 0 0 36px;
+    }
+    40%, 60% {
+        text-shadow: none;
+    }
+}
+
+.logodisco{
+    height: 400px;
+}
+
+.listacanciones ol li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: white;
+}
+
+.griddisco{
+    display: grid;
+    grid-template-columns: 35vw 30vw 35vw;
+    grid-template-rows: 150px 200px 400px;
+}
+.discotsn{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    align-items: center;
+}
+.fotodisco{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    text-align: center;
+    align-items: center;
+}
+.listacanciones{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;   
+}
+.listacanciones{
+    display: grid;
+    place-items: center;
+}
+
+.logosredes{
+    height: 80px;
+    margin: 50px;
+}
+
+.nuestrasredes{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.redesbanda{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.titulointegrantes{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.fotointegrantes{
+    height: auto;
+    width: auto;
+    max-height: 500px;
+    max-width: 500px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: linear-gradient(to right, yellow, yellowgreen);
+}
+
+.grid-integrantes{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 600px 600px;
+    text-align: center;
+    align-items: center;
+}
+.grid-nico{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.grid-nahu{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.grid-lukas{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.grid-fede{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+.nombresintegrantes{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.instrumentos{
+    font-size: 20px;
+}
+
+
+.historia{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: white;
+}
+.articulohistoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 100px;
+    margin: 80px 25px;
+}
+.titulohistoria{
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: black;
+    animation: neon 5s infinite;
+}
+@keyframes neon{
+    0%, 39%, 41%, 59%, 61%, 100% {
+        text-shadow:
+        black 0 0 12px,
+        white 0 0 24px,
+        white 0 0 36px;
+    }
+    40%, 60% {
+        text-shadow: none;
+    }
+}
+
+.videohistoria{
+    display: flex;
+    justify-content: center;
+}
+
+.logocontacto{
+    height: 50px;
+}
+.contactologos{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 100px;
+    align-items: center;
+}
+.contacto{
+    display:block;
+    text-align: center;
+}
+.nombrecontacto{
+    font-size: 30px;
+    color: black;
+    animation: neon 5s infinite;
+}
+@keyframes neon{
+    0%, 39%, 41%, 59%, 61%, 100% {
+        text-shadow:
+        black 0 0 12px,
+        white 0 0 24px,
+        white 0 0 36px;
+    }
+    40%, 60% {
+        text-shadow: none;
+    }
+}
+
+.logobuho{
+    height: 100px;
+}
+.buho{
+    display: block;
+    text-align: center;
+}
